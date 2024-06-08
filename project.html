@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title>PORTFILO</title>
+         
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <style>
+          body{
+            background: linear-gradient(133deg,rgb(50, 37, 58),rgb(39, 38, 38));
+          }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background:linear-gradient(120deg,rgb(50, 37, 58),rgb(34, 34, 34));
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float:right;
+}
+
+li .nav {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 32px;
+  text-decoration: none;
+}
+
+li .nav:hover {
+  border-color: #11e3f2;
+  border:1px solid #11e3f2;
+  color:#11e3f2;
+  box-shadow: 0 0 5px #11e3f2 ,0 0 25px #11e3f2,0 0 50px #11e3f2,0 0 200px #11e3f2 ;
+ -webkit-box-reflect:below 1px linear-gradient(transparent,#0005);
+}
+
+.full {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+
+  
+  
+  font-family: consolas;
+}
+
+.container {
+  display: flex;
+  flex-direction:row ;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+  
+  
+  
+}
+
+.container .card {
+  position: relative;
+  cursor: pointer;
+  margin:20 px;
+}
+
+.container .card .face {
+  width: 300px;
+  height: 200px;
+  transition: 0.5s;
+}
+
+.container .card .face.face1 {
+  position: relative;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+}
+
+.container .card:hover .face.face1.facea {
+  background: #009dff;
+  transform: translateY(0);
+}
+.container .card:hover .face.face1.faceb {
+  background: #ff0084;
+  transform: translateY(0);
+}
+.container .card:hover .face.face1.facec {
+  background: #ff4400;
+  transform: translateY(0);
+}
+.container .card:hover .face.face1.facee {
+  background: #ffe100;
+  transform: translateY(0);
+}.container .card:hover .face.face1.faced {
+  background: #9d03c3;
+  transform: translateY(0);
+}
+
+.container .card .face.face1 .content {
+  opacity: 0.2;
+  transition: 0.5s;
+}
+
+.container .card:hover .face.face1 .content {
+  opacity: 1;
+}
+
+.container .card .face.face1 .content img {
+  max-width: 100px;
+  align-items: center;
+}
+
+.container .card .face.face1 .content h3 {
+  margin: 10px 0 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.container .card .face.face2 {
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  transform: translateY(-100px);
+}
+
+.container .card:hover .face.face2 {
+  transform: translateY(0);
+}
+
+.container .card .face.face2 .content p {
+  margin: 0;
+  padding: 0;
+}
+
+.container .card .face.face2 .content a {
+  margin: 15px 0 0;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #333;
+  padding: 5px;
+  border: 1px solid #333;
+}
+
+.container .card .face.face2 .content a:hover {
+  background: #333;
+  color: #fff;
+}
+h2{
+  color:#b8b8b8;
+  font-size:50px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+         </style>
+    </head>
+    <body>
+        <ul>
+            
+            <li><a class="nav" href="contact.html">Contact</a></li>
+            <li><a class="nav"  href="project.html">Project</a></li>
+            
+            <li><a class="nav"  href="about.html">About</a></li>
+            <li><a class="nav"  href="index.html">Home</a></li>
+            
+          </ul>
+          <h2>Project</h2>
+
+          <div class="full">
+          <div class="container">
+            <div class="card">
+              <div class="face face1 facea">
+                <div class="content">
+                  <img src="image/restaurant.jpeg" />
+                  <h3>Restaurant</h3>
+                </div>
+              </div>
+              <div class="face face2">
+                <div class="content">
+                  <p>
+                    The project involves creating a dynamic restaurant website featuring a user-friendly interface for browsing the menu, making reservations, and ordering online.
+                  </p>
+                  <a href="task resturant/home.html">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="face face1 faceb">
+                <div class="content">
+                  <img src="image/robot.jpeg" style="align-items: center;" />
+                  <h3>Bluetooth Robot</h3>
+                </div>
+              </div>
+              <div class="face face2">
+                <div class="content">
+                  <p>
+                    The project involves developing a Bluetooth-controlled robot car that can be operated remotely using a smartphone app, providing real-time navigation and control.
+                  </p>
+                  <a href="#">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="face face1 facec">
+                <div class="content">
+                  <img src="image/pizza.jpeg" />
+                  <h3>Pizza</h3>
+                </div>
+              </div>
+              <div class="face face2">
+                <div class="content">
+                  <p>
+                   
+                    The project entails creating a pizza order website that allows customers to easily customize their pizzas, select from a variety of toppings, and place orders online. 
+                  </p>
+                  <a href="task pizza/home.html">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="container"  style="margin-right: 20px;">
+              <div class="card">
+                <div class="face face1 faced">
+                  <div class="content">
+                    <img src="image/login.jpeg"style="align-items: center;" />
+                    <h3>Login & Sign-in</h3>
+                  </div>
+                </div>
+                <div class="face face2">
+                  <div class="content">
+                    <p>
+                      The project involves developing a secure login and sign-in website with user authentication and authorization features, ensuring data privacy and protection.
+                    </p>
+                    <a href="login&signin/login.html">Read More</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="container" style="margin-left: 130px;">
+                <div class="card">
+                  <div class="face face1 facee">
+                    <div class="content">
+                      <img src="image/shopping.jpeg" style="align-items: center;"/>
+                      <h3>Shopping Websites</h3>
+                    </div>
+                  </div>
+                  <div class="face face2">
+                    <div class="content">
+                      <p>
+                        The project involves creating a comprehensive online shopping website that offers a seamless browsing and purchasing experience with a wide range of products, secure payment options, and fast shipping.
+                      </p>
+                      <a href="online shoping/evt.html">Read More</a>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,358 @@
+!DOCTYPE html>
+<html>
+    <head>
+         <title>PORTFILO</title>
+         
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+         <style>
+          body{
+            background-color: rgb(36, 36, 36);
+          }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background:linear-gradient(120deg,rgb(23, 23, 23),rgb(41, 40, 40));
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float:right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 32px;
+  text-decoration: none;
+}
+
+li a:hover {
+  border-color: #11e3f2;
+  border:1px solid #11e3f2;
+  color:#11e3f2;
+  box-shadow: 0 0 5px #11e3f2 ,0 0 25px #11e3f2,0 0 50px #11e3f2,0 0 200px #11e3f2 ;
+ -webkit-box-reflect:below 1px linear-gradient(transparent,#0005);
+}
+h1{
+    color:#e3e3e3;
+    text-align: center;
+    font-size: 50px;
+    
+}
+form {
+            margin-top: 20px;
+            text-align: center;
+        }
+        form label {
+            
+            margin-bottom: 5px;
+            color: rgb(117, 116, 116);
+        }
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: 300px;
+            padding: 10px;
+            background-color: #b8afaf;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 1em;
+        }
+        
+         button{
+                position:relative ;
+                padding:25px 30px ;
+                margin:40px 0 ;
+                display: inline-block;
+                color: #1debf6; 
+                font-weight: bolder;
+                background-color:  rgb(9, 9, 9);
+                text-decoration: none;
+                text-transform: uppercase;
+                transition: 0.5s;
+                letter-spacing: 4px;
+                overflow: hidden;
+                margin-right: 50px;
+                align-items: center;
+
+            }
+
+            button:hover{
+                background: #41e8f0;
+                color:#050801;
+                font-weight: bolder;
+                border: none;
+                box-shadow: 0 0 5px #41e8f0,0 0 25px #41e8f0,0 0 50px #41e8f0,0 0 200px #41e8f0 ;
+                -webkit-box-reflect:below 1px linear-gradient(transparent,#0005);
+            }
+
+            button:nth-child(1){
+                filter:hue-rotate(270deg);
+
+            }
+            button:nth-child(2){
+                filter:hue-rotate(110deg);
+
+            }
+
+            button span{
+                position:absolute;
+                display:block;
+            }
+            button span:nth-child(1){
+                top:0;
+                left:0;
+                width:100%;
+                height:2px;
+                background:linear-gradient(90deg,transparent,#41e8f0);
+                animation:animate1 1s linear infinite;
+            }
+            @keyframes animate1{
+                0%{
+                    left:-100%;
+
+                }
+                50%,100%{
+                    left:100%;
+                }
+            }
+
+
+            button span:nth-child(2){
+                top:-100%;
+                right:0;
+                width:2px;
+                height:100px;
+                background:linear-gradient(100deg,transparent,#41e8f0);
+                animation:animate2 1s linear infinite;
+                animation-delay: 0.25s;
+            }
+            @keyframes animate2{
+                0%{
+                    top:-100%;
+
+                }
+                50%,100%{
+                    top:100%;
+                }
+            }
+
+
+            button span:nth-child(3){
+                bottom:0;
+                right:0;
+                width:100%;
+                height:2px;
+                background:linear-gradient(270deg,transparent,#41e8f0);
+                animation:animate3 1s linear infinite;
+                animation-delay: 0.5s;
+            }
+            @keyframes animate3{
+                0%{
+                    right:-100%;
+
+                }
+                50%,100%{
+                    right:100%;
+                }
+            }
+
+
+            button span:nth-child(4){
+                bottom:-100%;
+                left:0;
+                width:2px;
+                height:100px;
+                background:linear-gradient(360deg,transparent,#41e8f0);
+                animation:animate4 1s linear infinite;
+                animation-delay: 0.75s;
+            }
+            @keyframes animate4{
+                0%{
+                    bottom:-100%;
+
+                }
+                50%,100%{
+                    bottom:100%;
+                }
+            }
+            .contain{
+                width:100%;
+                height: 310px;
+                background-color: rgb(177, 177, 177);
+                border-top-left-radius: 60%;
+                border-top-right-radius: 60%;
+            }
+            .container{
+  display: grid;
+  grid-template-columns: auto auto auto auto ;
+  height:1px;
+  justify-content:  center;
+  
+  padding: 50px;
+  align-content: center;
+  
+}
+h3{
+    text-align: center;
+    padding-top: 20px;
+    
+}
+.icon{
+  position: relative;
+  display: inline;
+  border-radius: 50%;
+  border: 0.2px solid black;
+  padding:15px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+
+}
+.icon .tooltip{
+  visibility: hidden;
+  padding: 5px 1px;
+  background-color: rgb(64, 62, 62);
+  color:aliceblue;
+  width:120px;
+  border-radius: 5px;
+  text-align: center;
+  opacity: 0;
+  transform: opacity 0.3s;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+}
+.icon:hover .tooltip{
+  visibility: visible;
+  opacity: 1;
+}
+
+.container .tooltip::before {
+  position: absolute;
+  content: '';
+  height: 8px;
+  width: 8px;
+  background-color: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.container .fb:hover ,
+.container .fb:hover .tooltip,
+.container .fb:hover .tooltip::before{
+  background-color:rgb(48, 113, 252) ;
+  border: 0.2px solid rgb(48, 113, 252);
+  color:white;
+}
+.container .in:hover ,
+.container .in:hover .tooltip,
+.container .in:hover .tooltip::before{
+  background-image:conic-gradient(rgb(185, 9, 138),rgb(237, 99, 57),orange,rgb(249, 225, 45),orange,rgb(237, 99, 57),rgb(186, 9, 139),rgb(139, 38, 148),rgb(186, 9, 139)) ;
+  border: 0;
+  color:white;
+}
+
+.container .gh:hover ,
+.container .gh:hover .tooltip,
+.container .gh:hover .tooltip::before{
+ background-image: linear-gradient(purple,rgb(41, 1, 54));
+ border: 0;
+  color:white;
+}
+
+.container .lk:hover ,
+.container .lk:hover .tooltip,
+.container .lk:hover .tooltip::before{
+  background-color:rgb(30, 68, 181) ;
+  border: 0.2px solid rgb(30, 68, 181);
+  color:white;
+}
+h4{
+    color: rgb(59, 59, 59);
+    text-align: center;
+    margin-top: -10px;
+}
+
+         </style>
+    </head>
+    <body>
+        <ul>
+            
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a  href="index.html">Home</a></li>
+            
+          </ul>
+
+          <header>
+            <h1>Contact</h1>
+                </header>
+                <center>
+            <form>
+                
+                <input type="text" placeholder="Name" id="name" name="name"><br>
+                
+                <input type="email" placeholder="E-mail" name="email"><br>
+               
+                <textarea id="message" placeholder="message"></textarea><br>
+               
+                <button type="submit">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    SUBMIT
+                </button>
+        
+            </form>
+        </center>
+
+        <div class="contain">
+            <h3>Contact as</h3>
+            <div class="container">
+                <div class="icon lk">
+                    <div class="tooltip">Linkedin</div>
+                      <span><a class="link" href="www.linkedin.com/in/sakthi-kumar-93821225a"><i class="fab fa-linkedin"></i></a></span>
+                    </div>
+
+                <div class="icon fb">
+                <div class="tooltip">Facebook</div>
+                  <span><a class="link" href="https://www.facebook.com/facebook/"><i class="fab fa-facebook-f"></i></a></span>
+                </div>
+            
+                <div class="icon in">
+                  <div class="tooltip">Instagram</div>
+                  <span><a class="link" href=""><i class="fab fa-instagram"></i></a></span>
+                </div>
+        
+          <div class="icon gh">
+            <div class="tooltip">Github</div>
+                  <span><a class="link" href=""><i class="fab fa-github"></i></a></span>
+                </div>
+              
+            </div>
+
+            <h4><i class="fa-solid fa-phone"></i> +91 956674323</h4><br>
+            <h4><i class="fa-solid fa-envelope"></i> sakthikumar21sk@gmail.com</h4>
+            <h4><i class="fa-solid fa-location-dot"></i> Villupuram,Tamil Nadu-604303.</h4>
+          
+            
+
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title>PORTFILO</title>
+         
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+         <style>
+          body{
+            background-image: url(image/back.webp);
+            background-color: rgb(0,0,0,0.7);
+            
+            height: 100%;
+            width:100%;
+            background-repeat: no-repeat;
+            background-blend-mode: darken;
+          }
+ ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background:linear-gradient(120deg,black,rgb(34, 34, 34));
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float:right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 32px;
+  text-decoration: none;
+}
+
+li a:hover {
+  border-color: #11e3f2;
+  border:1px solid #11e3f2;
+  color:#11e3f2;
+  box-shadow: 0 0 5px #11e3f2 ,0 0 25px #11e3f2,0 0 50px #11e3f2,0 0 200px #11e3f2 ;
+ -webkit-box-reflect:below 1px linear-gradient(transparent,#0005);
+}
+
+.name{
+  color: aliceblue;
+  font-size:55px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 230px;
+  padding-left: 330px;
+}
+h2{
+  color: aliceblue;
+  font-size:80px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 200px;
+  margin-top: -10px;
+}
+h3{
+  color: aliceblue;
+  margin-left: 130px;
+  font-size: 35px;
+  margin-top:-10px;
+}
+.img{
+  
+  background: url(image/sk.jpeg);
+  margin-top: -400px;
+  margin-left:1000px;
+  position: fixed;
+  height:400px;
+  width:400px;
+  
+}
+.cantainer{
+  height:400px;
+  width:400px;
+  background-color: rgb(2, 2, 2);
+  animation-duration: 3s;
+  animation-name: profile;
+  position: relative;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+
+}
+@keyframes profile{
+  from{left:0px;}
+  to{left:400px;}
+}
+.por{
+  color: #11e3f2;
+  font-size: 25px;
+  font-weight: 100;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top:55px;
+  margin-left: 10px;
+}
+
+
+            
+         </style>
+
+    </head>
+    <body>
+       
+        <ul>
+            
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a  href="index.html">Home</a></li>
+            
+          </ul>
+          <h1 class="por">Portfilo</h1>
+
+
+          <div class="head">
+            <h1 class="name">SakthiKumar P</h1>
+            <h2>Web Developer <i class="fa-solid fa-code"></i></h2>
+            <h3>B.E-Electronics and Communication Engineering  </h3>
+            <div class="img"><div class='cantainer'></div></div>
+
+          </div>
+
+    </body>
+</html>
+
