@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title> CSS Task</title>
+        <style>
+            div{
+                width: 50%;
+                background-color: yellow;
+                border: 10px dotted red;
+                margin:auto;
+            }
+            #para1::first-line{
+                color:green;
+                font-size: 28px;
+            }
+            #para1 + p{
+                background-color: aqua;
+
+            }
+            p[title]{
+                font-weight: bold;
+                color:blue;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="box1">This is First Div</div>
+        <p id="para1">CSS is a stlye sheet language used for specifying the presentation and styling of a document written in a markup language such as HTML. CSS is a cornerstone technology of the world wide web, alongside HTML and JS.</p>
+        <p id="para2">This is second paragraph</p>
+        <p title="para">This is another paragraph</p>
+    </body>
+</html>
+<!-- Create a div with sample text, width of 50%, yellow background color and some border
+- Center align above div horizontally using margin
+- Create a paragraph with random text on multiple lines
+- Color the first line of paragraph as green using pseudo class and increase font size to 28px
+- Create another paragraph below, and using sibling combinator, make background color as aqua
+- Create another paragraph with title = para, make font-weight as bold using attribute selector 
+-->

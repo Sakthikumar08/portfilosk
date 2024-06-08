@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PIZZA</title>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="image/piz3.jpeg">
+  <style>
+    h1{
+      display: inline;
+      font-size:75px;
+      font-style: italic;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    ul{
+            list-style-type: none;
+            margin: 0%;
+            padding: 0%;
+            overflow:hidden;
+            background-color:black;
+            position: fixed;
+            bottom: 0%;
+            
+            width:100%;
+           
+           
+           }
+           li{
+            float:inline-start;
+           }
+           li a{
+            display:block;
+            color:aliceblue;
+
+            padding: 25px 25px;
+            text-align: center;
+            
+           }
+           li a:hover{
+            background-color: dimgray;
+           }
+           #nav{
+            color: aliceblue;
+            padding: 16px;
+            float: inline-end;
+           }
+    body{
+      background-image: url(image/dev3.gif);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+    form{
+      color:black;
+      
+      margin-top: 20px;
+     
+     
+    }  
+
+    .order{
+      max-width: 500px;
+      margin: 30px auto;
+      
+      background-color:rgb(189, 185, 185);
+      
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  .kl{
+    display: block;
+      margin-bottom: 5px;
+  }
+  h2{
+    text-align: center;
+      color: black;
+      
+  }
+  button[type="submit"] {
+      background-color: #2ad72a;
+      color: white;
+      padding: 12px 24px;
+     
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+      margin-top: 20px;
+      width: 100%;
+      
+      
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    button[type="submit"]:hover {
+      background-color: #176736;
+    }
+    textarea {
+      width: calc(100% - 20px);
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #393333;
+    }
+    
+    
+  
+           
+    
+
+  </style>
+  </head>
+  <body>
+    <center>
+      
+    <img src="image/piz5.jpeg" style="height:65px;width: 65px;">
+    <h1>Pizza</h1>
+    
+  
+    </center>
+    <br>
+    
+
+
+
+<div class="order">
+  <h2>Design your own ingradient</h2>
+    <form >
+      <div>
+      <h2>Size</h2>
+      <label class="kl" for="size">Size:</label><br>
+      <input type="radio" id="small" name="size" value="small">
+      <label for="small">Small</label>
+      <br>
+      <input type="radio" id="medium" name="size" value="medium">
+      <label for="medium">Medium</label>
+      <br>
+      <input type="radio" id="large" name="size" value="large">
+      <label for="large">Large</label>
+      <br>
+      </div>
+
+      <div>
+        <h2>Topping</h2>
+        <label for="topping">Topping</label><br>
+        
+        <input type="checkbox" id="onion" name="topping" value="onion">
+        <label for="onion">Onion</label><br>
+        <input type="checkbox" id="capsicum" name="topping" value="capsicum">
+        <label for="capsicum">Capsicum</label><br>
+        <input type="checkbox" id="mushroom" name="topping" value="mushroom">
+        <label for="mushroom">Mushroom</label><br>
+        <input type="checkbox" id="corn" name="topping" value="corn">
+        <label for="corn">Corn</label><br>
+        <input type="checkbox" id="jalapeno" name="topping" value="jalapeno">
+        <label for="jalapeno">Jalapeno</label><br>
+        <input type="checkbox" id="red paprika" name="topping" value="red paprika">
+        <label for="red paprika">Red paprika</label><br>
+        <input type="checkbox" id="paneer" name="topping" value="paneer">
+        <label for="paneer">Paneer</label><br>
+        <input type="checkbox" id="olive" name="topping" value="olive">
+        <label for="olive">Olive</label><br>
+        <input type="checkbox" id="pineapple" name="topping" value="pineapple">
+        <label for="pineapple">Pineapple</label><br>
+      
+
+
+
+
+
+        
+
+        <input type="checkbox" id="chicken hum" name="topping" value="chicken hum">
+        <label for="chicken hum">Chicken Hum</label><br>
+        <input type="checkbox" id="chicken sausage" name="topping" value="chicken sausage">
+        <label for="chicken sausage">Chicken Sausage</label><br>
+        <input type="checkbox" id="bbq chicken" name="topping" value="bbq chicken">
+        <label for="bbq chicken">BBQ Chicken</label><br>
+        <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
+        <label for="pepperoni">Pepperoni</label><br>
+        <input type="checkbox" id="chicken Tikka" name="topping" value="chicken Tikka">
+        <label for="chicken Tikka">Chicken Tikka</label><br>
+        <input type="checkbox" id="chicken Meatballs" name="topping" value="chicken Meatballs">
+        <label for="chicken Meatballs">Chicken Meatballs</label><br>
+        <input type="checkbox" id="Extra cheese" name="topping" value="Extra cheese">
+        <label for="Extra cheese">Extra Cheese</label><br>
+        <input type="checkbox" id="Tomato" name="topping" value="Tomato">
+        <label for="Tomato">Tomato</label><br>
+      </div>
+      <div>
+        <label for="instruction">Special Intruction:</label>
+        <textarea id="instruction" name="instruction" rows="4" cols="30"></textarea>
+      </div>
+      <button type="submit">ORDER NOW</button>
+
+    </form>
+</div>
+<hr>
+<center>
+<img src="image/pack.jpeg" style="width:700px;height:500px;">
+<form>
+<buttom type="submit"><a href="pizza.html">VEIW ALL DEAL</a></buttom>
+</form>
+</center>
+<h1>pizza</h1>
+<h1>pizza</h1>
+
+
+    <nav>
+     
+      <ul>
+        <form id="nav">
+          <label class="kk" for="give feedback">Help us in serving you better?</label>
+          <input type="text" id="give feedback" name="give feedback" >
+        </form>
+        <li><a href="#about us">About us</a></li>
+        <li><a href="pizza.html">Order Now </a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#visit pizza">Visit pizza</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
