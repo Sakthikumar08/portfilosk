@@ -39,6 +39,118 @@ li a:hover {
 .part{
   margin-top: 60px;
 }
+body{
+    background: #111;
+    height:100vh;
+}
+.wrapper span{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: -180px;
+    z-index: -1;
+    background-color: #2f3037;
+    box-shadow: 0 0 50px #0072ff,
+    0 0 100px #0072ff,
+    0 0 150px #0072ff,
+    0 0 200px #0072ff,;
+    animation: animate 10s linear infinite;
+}
+.wrapper span:nth-child(1){
+    animation-delay: 0.3s;
+    left:60px;
+}
+.wrapper span:nth-child(2){
+    animation-delay: 6s;
+    left:10%;
+    width:60px;
+    height:60px;
+}
+.wrapper span:nth-child(3){
+    animation-delay: 2s;
+    left:20%;
+}
+.wrapper span:nth-child(4){
+    animation-delay: 5s;
+    left:30%;
+    width:80px;
+    height:80px;
+}
+.wrapper span:nth-child(5){
+    animation-delay: 1s;
+    left:40%;
+}
+.wrapper span:nth-child(6){
+    animation-delay: 7s;
+    left:50%;
+    
+}
+.wrapper span:nth-child(7){
+    animation-delay: 6s;
+    left:60%;
+    width: 100px;
+    height: 100px;
+}
+.wrapper span:nth-child(8){
+    animation-delay: 8s;
+    left:70%;
+    
+}
+.wrapper span:nth-child(9){
+    animation-delay: 6s;
+    left:80%;
+    width: 90px;
+    height: 90px;
+}
+.wrapper span:nth-child(10){
+    animation-delay: 4s;
+    left:90%;
+    
+}
+.banner{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.content{
+   
+   color: aliceblue;
+   margin-top: 800px;
+   font-size: 20px;
+}
+.content h3{
+  font-weight: bold;
+  color:rgb(167, 172, 177);
+  font-size: 40px;
+  
+}
+.content h2{
+  font-weight: bold;
+  color:rgb(167, 172, 177);
+  font-size: 50px;
+  
+}
+.content h4{
+  font-weight: bold;
+  color:rgb(167, 172, 177);
+  font-size: 30px;
+  
+}
+@keyframes animate{
+    0%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    80%{
+        opacity:  .7;
+    }
+    100%{
+        transform: translateY(-800px) rotate(360deg);
+    }
+}
+
+
 
          </style>
     </head>
@@ -52,33 +164,52 @@ li a:hover {
             
           </ul>
           <div class="part">
-        </h2>
-        <p>Hello there! I'm<mark> Sakthi Kumar, a second-year <q><abbr title="Electronics and Communication Engineering">ECE</abbr></q> student</mark> with a passion for technology and innovation.</p>
-    <p>Ever since I was young, I've been fascinated by how things work, especially electronic devices and communication systems. This curiosity led me to pursue a degree in <q><abbr title="Electronics and Communication Engineering">ECE</abbr></q>, where I'm constantly learning and exploring the intricacies of electrical circuits,digital systems and wireless communication .</p>
-    <p>Aside from academics, I'm an avid problem solver and enjoy taking on challenges. I actively participate in coding competitions and hackathons, honing my programming skills in languages like C, Python, and Java. I believe that continuous learning and hands-on experience are key to becoming a successful engineer.</p>
-    <p>When I'm not buried in textbooks or coding, you can find me exploring the latest tech trends, playing sports with friends, or volunteering for community projects. I strongly believe in giving back to society and making a positive impact wherever I can.</p>
-    <p>I'm excited about the future possibilities in the field of <q><abbr title="Electronics and Communication Engineering">ECE</abbr></q> and look forward to contributing my skills and knowledge to create innovative solutions that benefit society.</p>
-    <br>
-    <h2>Skills</h2>
+            <div class="wrapper">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+          <div class="banner">
+          <div class="content">
+              
+          
+       
+    <center><h2>Skills</h2>
     <h3>Electronics and Communication Engineering:</h3>
     <p> Through my coursework, I have developed a strong foundation in <cite>electronics principles, circuit design, communication systems</cite> and<cite>signal processing</cite>.
-    
     <br>
+    
+
      <h3>Web Development:</h3>
      <p>As a web developer, I am proficient in <abbr title="Hypertext Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr>, JavaScript, and various frameworks such as React.js or Vue.js. I have experience in creating responsive and visually appealing websites.</p>   
     <br>
+    
+
     <h3>Programming Languages:</h3>
     <p> I am skilled in languages such as <ins>Python</ins>, <ins>Java</ins>, and <ins>C++</ins>, which allows me to tackle a wide range of projects and problems.</p>
     <br>
+    
+
     <h3>Problem-Solving:</h3>
     <p> I possess strong problem-solving abilities, which I apply both in engineering challenges and web development projects.</p>
     <br>
+   
+
     <h3>Team Collaboration:</h3>
     <p>I enjoy working in team settings, contributing ideas, and collaborating with others to achieve common goals.</p>
     <br><br>
-    <h2>Strengths:</h2>
     
-        
+  </center>
+<center>
+    <h3>Strengths:</h3>
+    
     <p>Adaptability </p>
     <p><del>Overcommitment</del></p>
     <p>Creativity</p>
@@ -86,7 +217,8 @@ li a:hover {
     <p>Time Management</p>
     <P><del>Learning Patience</del></P>
     <br>
+  </center>
   </div>
-
+</div>
     </body>
 </html>
